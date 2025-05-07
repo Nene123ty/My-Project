@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Youtube Channel</title>
+        <style>
+         body{
+            background: linear-gradient(100deg,red,white);
+         }
+         .p{
+            color: black;
+         }
+         button{
+            background-color: black;
+            color: white;
+         }
+        
+
+        </style>
+    </head>
+    <body>
+        <h1>My Youtube Channel</h1>
+        <a href="https://www.youtube.com/@Nene_123ty">My Youtube Channel</a>
+        <h4>On May 3 Saturday 2025, I had 42 Views.</h4>
+        <button id="button" class="button">Click Me🎩</button>
+        <script>
+             const button = document.getElementById('button');
+
+button.addEventListener('click', function() {
+  let welcome;
+ welcome = prompt("Hello Sir or Ma'am, Please enter your Name");
+ if (welcome) {
+    console.log("%cScript Loaded", "color:blue;");
+    alert("Hello" + " " + welcome);
+    let youtube;
+    youtube = prompt("Do you want to see my youtube channel? Enter Yes if you do and enter No if you do not" + " " + welcome);
+    if (youtube == "Yes") {
+        var strWindowFeatures = "location=yes,height=570,width=520,scrollbars=yes,status=yes";
+var URL = "https://www.youtube.com/@Nene_123ty";
+var win = window.open(URL, "_blank", strWindowFeatures);
+console.log('%cYoutube Channel Uploaded', 'color: black; background-color: red;');
+ alert("Thank you for opening my youtube channel");
+ console.log('%cFiles caught', 'color: green; background-color: yellow;');
+    }else if (youtube == "No") {
+        alert("Ok");
+    }
+ }else if (welcome == null || welcome=="") {
+    alert("Error. Please enter your Name");
+    console.log('%cError caught', 'color: green; background-color: red;');
+ }
+});
+        </script>
+    </body>
+</html>
